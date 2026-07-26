@@ -2,7 +2,7 @@
   "quality": {
     "weather_quality": "DEFAULT",
     "leaves_quality": "DEFAULT",
-    "enable_vignette": true,
+    "enable_vignette": false,
     "use_closest_point_entity_sort": false
   },
   "advanced": {
