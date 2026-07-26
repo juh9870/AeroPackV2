@@ -22,6 +22,7 @@ ESM/
 /xaero/
 /XaeroWaypoints_*/
 /Distant_Horizons_server_data/
+/.probe/
 
 icon.png
 options.txt
@@ -79,6 +80,7 @@ config/immediatelyfast.json
 config/ftbbackups2.json
 config/packetfixer.properties
 config/spark/tmp/
+config/spark/tmp-client/
 config/spark/activity.json
 config/roughlyenoughitems/hints.json
 config/voicechat/username-cache.json

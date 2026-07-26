@@ -169,4 +169,7 @@ ClientEvents.generateAssets('after_mods', (event) => {
   EMI.add(event, 'kubejs', 'packagers', ['#create_vibrant_vaults:packagers']);
   EMI.add(event, 'kubejs', 'vaults', ['#create_vibrant_vaults:item_vaults']);
   EMI.add(event, 'kubejs', 'shipping_containers', [/^create_vibrant_vaults:.*shipping_container.*$/]);
+  EMI.add(event, 'kubejs', 'andesite_item_logistics', ['#kubejs:andesite_item_logistics']);
+  EMI.add(event, 'kubejs', 'brass_item_logistics', ['#kubejs:brass_item_logistics']);
+  EMI.add(event, 'kubejs', 'mechanical_farming_equipment', ['#kubejs:mechanical_farming']);
 });

@@ -205,7 +205,20 @@ REG.tagGroup('kubejs:controllers', {
   recipesWhitelist: [],
   noSelector: true,
 });
-REG.tagGroup('kubejs:chutes', ['create:chute', 'minecraft:hopper']);
+REG.tagGroup('kubejs:andesite_item_logistics', [
+  'create:andesite_funnel',
+  'create:chute',
+  'minecraft:hopper',
+  'create:item_hatch',
+  'create:andesite_tunnel',
+]);
+REG.tagGroup('kubejs:brass_item_logistics', [
+  'create:brass_funnel',
+  'create:smart_chute',
+  'create_connected:brass_chute',
+  'create:brass_tunnel',
+]);
+REG.tagGroup('kubejs:mechanical_farming', ['create:mechanical_harvester', 'create:mechanical_plough']);
 
 // flips - like tag groups but no stopnecutting, just crafting directly into eachother and can be swapped by hittin'em with a hammer
 

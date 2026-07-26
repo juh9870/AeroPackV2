@@ -115,15 +115,15 @@ ServerEvents.recipes((event) => {
 
   circle('classicpipes:routing_pipe', '#kubejs:wooden_pipes', 'kubejs:logistics_machine');
 
-  event.shapeless('classicpipes:copper_pipe', ['#kubejs:wooden_pipes', 'create:andesite_funnel']);
-  event.shapeless('classicpipes:copper_fluid_pipe', ['#kubejs:wooden_fluid_pipes', 'create:andesite_funnel']);
+  event.shapeless('classicpipes:copper_pipe', ['#kubejs:wooden_pipes', '#kubejs:andesite_item_logistics']);
+  event.shapeless('classicpipes:copper_fluid_pipe', ['#kubejs:wooden_fluid_pipes', '#kubejs:andesite_item_logistics']);
 
   event.shapeless('classicpipes:advanced_copper_pipe', [
     ['#kubejs:wooden_pipes', 'classicpipes:copper_pipe'],
-    'create:brass_funnel',
+    '#kubejs:brass_item_logistics',
   ]);
   event.shapeless('classicpipes:advanced_copper_fluid_pipe', [
     ['#kubejs:wooden_fluid_pipes', 'classicpipes:copper_fluid_pipe'],
-    'create:brass_funnel',
+    '#kubejs:brass_item_logistics',
   ]);
 });

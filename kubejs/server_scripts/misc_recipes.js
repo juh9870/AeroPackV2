@@ -41,7 +41,7 @@ REG.addTag('kubejs:smithing_template', [
   'kubejs:downgrade_template',
 ]);
 
-REG.addTag('curios:head', ['aeronautics:aviators_goggles'])
+REG.addTag('curios:head', ['aeronautics:aviators_goggles']);
 
 ServerEvents.recipes((event) => {
   event.replaceInput(
