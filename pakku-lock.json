@@ -1,5 +1,5 @@
 {
-    "target": "multiplatform",
+    "target": "curseforge",
     "mc_versions": [
         "1.21.1"
     ],
@@ -13558,68 +13558,6 @@
                     ],
                     "size": 1042533,
                     "date_published": "2026-02-25T09:46:07.637Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "IvRxOQ8W6MXgx45t",
-            "type": "MOD",
-            "side": "BOTH",
-            "slug": {
-                "curseforge": "recycling-arrows",
-                "modrinth": "recycling-arrow"
-            },
-            "name": {
-                "curseforge": "Recycling Arrows",
-                "modrinth": "Recycling Arrow"
-            },
-            "id": {
-                "curseforge": "1482284",
-                "modrinth": "1n8dnK43"
-            },
-            "files": [
-                {
-                    "type": "modrinth",
-                    "file_name": "recyclingarrows-1.7.3-1.21.1-neoforge.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://cdn.modrinth.com/data/1n8dnK43/versions/jQgN1ffG/recyclingarrows-1.7.3-1.21.1-neoforge.jar",
-                    "id": "jQgN1ffG",
-                    "parent_id": "1n8dnK43",
-                    "hashes": {
-                        "sha512": "1d1f13eebf41a9f362d220562c45238e0d60506d08399383709bf4db458bded080499164a3701ca94c32c2b12e6bb2e64c97b97a208c39aa4fc4ff8fc4e45170",
-                        "sha1": "d30ef501f412b7cd4552e73c75b0279255a9c823"
-                    },
-                    "required_dependencies": [],
-                    "size": 66030,
-                    "date_published": "2026-07-05T05:49:00.919894Z"
-                },
-                {
-                    "type": "curseforge",
-                    "file_name": "recyclingarrows-1.7.3-1.21.1-neoforge.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "forge",
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8372/869/recyclingarrows-1.7.3-1.21.1-neoforge.jar",
-                    "id": "8372869",
-                    "parent_id": "1482284",
-                    "hashes": {
-                        "sha1": "d30ef501f412b7cd4552e73c75b0279255a9c823",
-                        "md5": "8c0d18d08ee5cd204855401ebf9db9ef"
-                    },
-                    "required_dependencies": [],
-                    "size": 66030,
-                    "date_published": "2026-07-05T04:25:41.903Z"
                 }
             ]
         },
