@@ -50,6 +50,22 @@
         "probejs": {
             "side": "CLIENT",
             "export": false
+        },
+        "sophisticated-backpacks": {
+            "ignore_sync": true,
+            "ignore_version_mismatch_warning": true,
+            "force_version": [
+                "422301",
+                "TyCTlI4b"
+            ]
+        },
+        "sophisticated-core": {
+            "ignore_sync": true,
+            "ignore_version_mismatch_warning": true,
+            "force_version": [
+                "618298",
+                "nmoqTijg"
+            ]
         }
     }
 }
