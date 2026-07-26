@@ -1,0 +1,4 @@
+[server]
+	#You may need to restart the game or the world tp apply the settings
+	#Play vanilla breaking effect when an item becomes broken.
+	breaking_effect = true

@@ -1,0 +1,6 @@
+{
+  "inputs": ["minecraft:beacon"],
+  "output": "minecraft:diamond_block",
+  "player_blocks": false,
+  "retrogen": false
+}

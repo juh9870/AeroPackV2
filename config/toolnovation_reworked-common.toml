@@ -1,0 +1,31 @@
+#How much durability (in %) each repair material restores at the Repair Forge.
+#The total repaired is dynamic: this percent multiplied by the number of materials spent.
+# Default: 25
+# Range: 1 ~ 100
+repairPercentPerMaterial = 50
+#Maximum number of repair materials that can be spent in a single Repair Forge operation.
+# Default: 4
+# Range: 1 ~ 64
+maxRepairMaterials = 4
+#If false, repairing a broken tool strips its enchantments unless it has the Eternal Binding enchantment.
+#If true, repairing always keeps enchantments (Eternal Binding becomes purely cosmetic).
+repairKeepsEnchantments = true
+#If true, broken items cannot be repaired on an anvil or grindstone - only at the Repair Forge.
+#Prevents bypassing the broken mechanic (and the Eternal Binding cost) with vanilla repair.
+blockVanillaRepair = false
+#How much of its protection broken armor still provides (in %). 25 = a broken set keeps a quarter of its defense.
+# Default: 25
+# Range: 0 ~ 100
+brokenArmorProtectionPercent = 25
+#Show an action-bar message and play extra particles when one of your items breaks.
+breakMessageEnabled = true
+#If true, tools that are almost out of durability mine slower, warning you before they break.
+wearPenaltyEnabled = true
+#Durability (in %) at or below which the wear penalty starts to apply.
+# Default: 10
+# Range: 0 ~ 100
+wearPenaltyThresholdPercent = 10
+#Mining speed (in %) a worn-out tool keeps while below the wear threshold. 60 = mines at 60% speed.
+# Default: 60
+# Range: 5 ~ 100
+wearPenaltyMiningPercent = 60

@@ -12,13 +12,25 @@ downloads/
 modernfix/
 fancymenu_data/
 ESM/
+/.mixin.out/
+/.sable/
+/.cache/
+/cache/
+/data/
+/dynamic-data-pack-cache/
+/dynamic-resource-pack-cache/
+/xaero/
+/XaeroWaypoints_*/
 
 icon.png
 options.txt
 rhino.local.properties
 usercache.json
 usernamecache.json
-emi.json
+command_history.txt
+patchouli_data.json
+ponders_watched.json
+ponders_watched_azimuth.json
 
 # Pakku
 build/

@@ -1,14 +1,14 @@
 {
-    "name": "PanPack Template",
+    "name": "Aeropakku",
     "version": "DEV",
-    "release_type": "release",
-    "description": "A template pack",
-    "author": "Pansmith",
+    "description": "Aeropakku",
+    "author": "juh9870",
     "overrides": [
         "config",
         "defaultconfigs",
         "kubejs",
-        "!kubejs/probe/**"
+        "!kubejs/probe/**",
+        "emi.json"
     ],
     "server_overrides": [
         "!kubejs/assets",

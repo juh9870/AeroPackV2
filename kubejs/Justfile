@@ -1,0 +1,10 @@
+fmt:
+    npx @biomejs/biome@2.5.5 format --write
+
+check:
+    npx typescript@7 -p ./server_scripts/jsconfig.json
+    npx typescript@7 -p ./client_scripts/jsconfig.json
+    npx typescript@7 -p ./startup_scripts/jsconfig.json
+
+update-server:
+    rsync -vhP -a . /bigstore/mc_server/aero0.0.5/data/kubejs/

@@ -1,0 +1,2 @@
+#If false, disable recycling_arrows datapack drop override system and always fallback to original resolved arrow item.
+enableDatapackDrops = true

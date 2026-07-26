@@ -1,0 +1,15 @@
+[survivalToolgun]
+	#Allow the survival structure tool gun to save physical structures as blueprints.
+	allowSave = true
+	#Allow the survival structure tool gun to query nearby physical structures.
+	allowQuery = false
+	#Allow the survival structure tool gun to create constraints with the weld mode.
+	allowWeld = false
+	#Allow the survival structure tool gun to use weld and rotate mode.
+	allowSimpleWeld = false
+	#Allow the survival structure tool gun to translate physical structures.
+	allowTranslate = true
+	#Allow the survival structure tool gun to rotate physical structures.
+	allowRotate = true
+	#Allow the survival structure tool gun to remove tracked toolgun constraints.
+	allowDisconnect = false

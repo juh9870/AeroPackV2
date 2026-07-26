@@ -1,0 +1,6 @@
+# Default: 5
+# Range: 1 ~ 16
+max_tank_size = 5
+# Default: 5
+# Range: 1 ~ 16
+max_vault_size = 5

@@ -1,0 +1,49 @@
+{
+  "configVersion": 1,
+  "enabled": true,
+  "rules": [
+    {
+      "name": "Suppress OpenAL info spam",
+      "enabled": false,
+      "type": "LOGGER_NAME",
+      "pattern": "org.lwjgl.openal",
+      "action": "DENY"
+    },
+    {
+      "name": "Suppress DEBUG from server level",
+      "enabled": false,
+      "type": "LOGGER_NAME",
+      "pattern": "net.minecraft.server.level",
+      "action": "DENY",
+      "level": "DEBUG"
+    },
+    {
+      "name": "Suppress worldgen item messages",
+      "enabled": true,
+      "type": "MESSAGE_REGEX",
+      "pattern": "Tried to load invalid item: 'Item must not be minecraft:air'",
+      "action": "DENY"
+    },
+    {
+      "name": "Suppress worldgen attribute messages",
+      "enabled": true,
+      "type": "MESSAGE_REGEX",
+      "pattern": "Ignoring unknown attribute",
+      "action": "DENY"
+    },
+    {
+      "name": "Suppress worldgen template pool messages",
+      "enabled": true,
+      "type": "MESSAGE_REGEX",
+      "pattern": "Couldn't find template pool reference",
+      "action": "DENY"
+    },
+    {
+      "name": "Always allow error messages",
+      "enabled": false,
+      "type": "LEVEL",
+      "pattern": "ERROR",
+      "action": "ALLOW"
+    }
+  ]
+}

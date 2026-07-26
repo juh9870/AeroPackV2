@@ -1,0 +1,9 @@
+[reactive_stress]
+	#Set Max VaultSize
+	# Default: 5
+	# Range: 1 ~ 128
+	VaultSize = 5
+	#Set Max TankSize
+	# Default: 7
+	# Range: 1 ~ 128
+	TankSize = 7

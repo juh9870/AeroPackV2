@@ -1,0 +1,5 @@
+{
+  "mode": "DENYLIST",
+  "items": [],
+  "_comment": "To use ALLOWLIST, set mode to 'ALLOWLIST' and add item IDs to the list."
+}

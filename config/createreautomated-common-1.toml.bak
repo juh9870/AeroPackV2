@@ -1,0 +1,52 @@
+#.
+#Configure nodes spawn.
+[worldgen]
+	#.
+	#.
+	#Whether Create Re-Automated should generate nodes in the world.
+	enabled = true
+	#.
+	#Number of faces that must touch the respective ore for a node to spawn
+	# Default: 3
+	# Range: 0 ~ 6
+	requiredFaces = 3
+
+	#.
+	#Overworld specific configs.
+	[worldgen.overworld]
+		#.
+		#.
+		#Attempts per chunk to spawn a Node.
+		# Default: 35
+		# Range: 0 ~ 512
+		tries = 35
+		#.
+		#Max Y level where nodes can spawn.
+		# Default: -64
+		# Range: > -2147483648
+		fromY = -64
+		#.
+		#Min Y level where nodes can spawn.
+		# Default: 64
+		# Range: > -2147483648
+		toY = 64
+
+	#.
+	#Nether specific configs.
+	[worldgen.the_nether]
+		#.
+		#.
+		#Attempts per chunk to spawn a Node.
+		# Default: 50
+		# Range: 0 ~ 512
+		tries = 50
+		#.
+		#Max Y level where nodes can spawn.
+		# Default: 0
+		# Range: > -2147483648
+		fromY = 0
+		#.
+		#Min Y level where nodes can spawn.
+		# Default: 128
+		# Range: > -2147483648
+		toY = 128
