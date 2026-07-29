@@ -368,7 +368,7 @@ ServerEvents.recipes((event) => {
   });
   event.remove({ id: /^create:crushing\/.+_horse_armor$/ });
   event.remove({ id: /^l2complements:generated_tools\/.+\/recycle\/.+$/ });
-  event.remove({ id: /^minecraft:(iron|golden|copper)_nugget_from_smelting$/ });
+  event.remove({ id: /^minecraft:(iron|gold(en)?|copper)_nugget_from_(smelting|blasting)$/ });
   event.remove({ id: /^modulargolems:crushing\/(roman|wind|barbaric).+$/ });
   event.remove({ id: /^modulargolems:crushing\/.+golem_(sword|axe|spear)$/ });
 
