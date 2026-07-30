@@ -80,7 +80,7 @@ ServerEvents.recipes((event) => {
     type: 'createsprings:welding',
     ingredients: [
       {
-        item: 'create:brass_block',
+        item: 'create:brass_casing',
       },
       {
         item: 'create:rose_quartz_lamp',
@@ -103,7 +103,7 @@ ServerEvents.recipes((event) => {
   });
 
   event.recipes.create.sequenced_assembly(
-    ['kubejs:copper_machine'],
+    [Item.of('kubejs:copper_machine', 2)],
     'create:copper_casing',
     [
       event.recipes.create.filling(
@@ -118,7 +118,7 @@ ServerEvents.recipes((event) => {
     1,
   );
 
-  event.shaped('kubejs:locomotion_machine', ['S  ', 'BCQ', 'TGG'], {
+  event.shaped(Item.of('kubejs:locomotion_machine', 2), ['S  ', 'BCQ', 'TGG'], {
     S: 'create:red_seat',
     T: 'create:track',
     C: 'create:railway_casing',
@@ -128,7 +128,7 @@ ServerEvents.recipes((event) => {
   });
 
   event.recipes.create.sequenced_assembly(
-    ['kubejs:locomotion_machine'],
+    [Item.of('kubejs:locomotion_machine', 2)],
     'create:railway_casing',
     [
       event.recipes.create.filling(
@@ -148,7 +148,7 @@ ServerEvents.recipes((event) => {
     1,
   );
 
-  event.shaped('kubejs:logistics_machine', ['TL ', 'JVB', 'NCB'], {
+  event.shaped(Item.of('kubejs:logistics_machine', 2), ['TL ', 'JVB', 'NCB'], {
     T: 'minecraft:tripwire_hook',
     L: 'bits_n_bobs:lightbulb',
     N: 'minecraft:note_block',
@@ -159,7 +159,7 @@ ServerEvents.recipes((event) => {
   });
 
   event.recipes.create.sequenced_assembly(
-    ['kubejs:logistics_machine'],
+    [Item.of('kubejs:logistics_machine', 2)],
     'create:item_vault',
     [
       event.recipes.create.deploying(['create:item_vault'], ['create:item_vault', 'minecraft:note_block']),

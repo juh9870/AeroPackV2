@@ -57,7 +57,6 @@ build/
 /kubejs/probe/
 /kubejs/config/probejs.json
 /kubejs/config/probe-settings.json
-/kubejs/*/jsconfig.json
 
 # Client configs (with exceptions below)
 /config/**/*client.*
