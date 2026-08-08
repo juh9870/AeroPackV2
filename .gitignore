@@ -58,6 +58,10 @@ build/
 /kubejs/config/probejs.json
 /kubejs/config/probe-settings.json
 
+# Misc
+/debug/
+hs_err_*.log
+
 # Client configs (with exceptions below)
 /config/**/*client.*
 
@@ -99,6 +103,7 @@ config/iris.properties
 config/zfastnoise.mixin.properties
 config/asyncparticles/asyncparticles-mixin.properties
 defaultconfigs/ftbultimine/ftbultimine-*.snbt
+config/forgeendertech/cached.dat
 
 # Linux
 *~
