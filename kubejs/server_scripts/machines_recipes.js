@@ -58,7 +58,7 @@ ServerEvents.recipes((event) => {
     [Item.of('kubejs:andesite_machine', 2)],
     'create:gearbox',
     [
-      event.recipes.create.cutting(['create:andesite_casing'], ['create:andesite_casing']),
+      event.recipes.create.cutting(['create:andesite_casing'], ['create:andesite_casing']).processingTime(50),
       event.recipes.create.deploying(['create:andesite_casing'], ['create:andesite_casing', 'create:cogwheel']),
       event.recipes.create.deploying(['create:andesite_casing'], ['create:andesite_casing', 'create:large_cogwheel']),
       event.recipes.create.deploying(['create:andesite_casing'], ['create:andesite_casing', 'minecraft:chain']),
@@ -163,7 +163,7 @@ ServerEvents.recipes((event) => {
     'create:item_vault',
     [
       event.recipes.create.deploying(['create:item_vault'], ['create:item_vault', 'minecraft:note_block']),
-      event.recipes.create.cutting(['create:item_vault'], ['create:item_vault']),
+      event.recipes.create.cutting(['create:item_vault'], ['create:item_vault']).processingTime(50),
       event.recipes.create.deploying(['create:item_vault'], ['create:item_vault', 'minecraft:book']),
       event.recipes.create.deploying(['create:item_vault'], ['create:item_vault', 'create:cardboard_block']),
       event.recipes.create.deploying(['create:item_vault'], ['create:item_vault', 'minecraft:lead']),

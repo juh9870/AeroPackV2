@@ -90,6 +90,8 @@ Ingredient.of(/classicpipes:.+fluid_pipe/).itemIds.forEach((id) => {
   );
 });
 
+REG.addBlockTag('create:wrench_pickup', /^classicpipes:.+_pipe$/);
+
 ServerEvents.recipes((event) => {
   event.shaped(Item.of('classicpipes:oak_pipe', 8), ['PGP'], {
     P: '#minecraft:planks',

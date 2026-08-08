@@ -232,3 +232,5 @@ REG.itemsFlip('tracks:small_track_drive_wheel', 'tracks:small_suspension_track')
 REG.itemsFlip('create:fluid_tank', 'create_connected:fluid_vessel');
 REG.itemsFlip('createvintageneoforged:centrifuge', 'create:mechanical_mixer');
 REG.itemsFlip('createvintageneoforged:curving_press', 'create:mechanical_press');
+
+REG.addBlockTag('create:wrench_pickup', [/^everycomp:fs\/.+\/.+$/, /^functionalstorage:.+$/]);

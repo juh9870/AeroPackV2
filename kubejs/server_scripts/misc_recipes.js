@@ -13,6 +13,8 @@ REG.addTag('c:ingots', [
 ]);
 
 REG.addTag('c:nuggets', ['createsprings:spring_alloy_nugget']);
+// EMI is not happy without this tag
+REG.addTag('c:copper_nuggets', ['create:copper_nugget']);
 REG.addTag('c:plates', ['createsprings:spring_alloy_sheet', 'rubberworks:rubber_sheet']);
 REG.addTag('c:music_discs', [
   'apothic_enchanting:music_disc_eterna',
@@ -42,6 +44,7 @@ REG.addTag('kubejs:smithing_template', [
 ]);
 
 REG.addTag('curios:head', ['aeronautics:aviators_goggles']);
+REG.addTag('curios:belt', ['minecraft:spyglass']);
 
 ServerEvents.recipes((event) => {
   event.replaceInput(
@@ -149,9 +152,24 @@ ServerEvents.recipes((event) => {
     S: 'simulated:spring',
   });
 
+  event.remove({ id: 'surfacesamples:redstone_shard_crystallisation_from_blasting_redstone' });
   event.remove({ id: 'surfacesamples:crushing/redstone_shard' });
   event.remove({ id: 'surfacesamples:crushing/glowquartz_shard' });
+  event.remove({ id: 'surfacesamples:glowquartz_shard' });
   event.remove({ id: 'surfacesamples:redstone_from_shard' });
+  event.recipes.createvintageneoforged.pressurizing(
+    [Item.of('surfacesamples:redstone_shard', 4), CreateItem.of('surfacesamples:redstone_shard', 0.5)],
+    [Item.of('minecraft:redstone', 4), Item.of('create:cinder_flour'), Fluid.of('minecraft:lava', 250)],
+  );
+  event.recipes.createvintageneoforged.pressurizing(
+    [Item.of('surfacesamples:glowquartz_shard', 4), CreateItem.of('surfacesamples:glowquartz_shard', 0.5)],
+    [
+      Item.of('minecraft:quartz', 2),
+      Item.of('minecraft:glowstone_dust', 2),
+      'aeronautics:end_stone_powder',
+      Fluid.of('minecraft:water', 250),
+    ],
+  );
   event.recipes.create
     .crushing(
       [
@@ -163,6 +181,7 @@ ServerEvents.recipes((event) => {
       ['surfacesamples:crystallised_redstone_block'],
     )
     .id('surfacesamples:crushing/redstone_shard');
+
   event.recipes.create
     .crushing(
       [
@@ -176,6 +195,74 @@ ServerEvents.recipes((event) => {
       ['surfacesamples:glowquartz_block'],
     )
     .id('surfacesamples:crushing/glowquartz_shard');
+
+  event.recipes.create.crushing(
+    ['rubberworks:rubber_sheet', 'create_enchantment_industry:super_experience_nugget'],
+    [Ingredient.of('#c:music_discs')],
+  );
+
+  event.custom({
+    type: 'createsprings:welding',
+    ingredients: [
+      {
+        item: 'minecraft:quartz_block',
+      },
+      {
+        item: 'minecraft:redstone_block',
+      },
+    ],
+    speed: 'fast',
+    results: [
+      {
+        id: 'create:rose_quartz',
+        count: 4,
+      },
+    ],
+  });
+
+  event.remove({ id: 'aeronautics:crushing/end_stone_powder' });
+  event.remove({ id: 'create_ultimate_factory:compat/aeronautics_mixing_endstonepowder' });
+  event.recipes.createvintageneoforged.pressurizing(
+    ['minecraft:end_stone'],
+    [Ingredient.of('#c:cobblestones'), 'aeronautics:end_stone_powder', Fluid.of('minecraft:water', 25)],
+  );
+  event.remove({ id: 'create:crushing/tuff' });
+  event.remove({ id: 'create:crushing/veridium' });
+  event.remove({ id: 'create:crushing/asurine' });
+  event.remove({ id: 'create:crushing/crimsite' });
+  event.remove({ id: 'create:crushing/ochrum' });
+
+  event.remove({ output: 'create:track' });
+  event.recipes.create.sequenced_assembly(
+    [Item.of('create:track', 16)],
+    Ingredient.of('#create:sleepers'),
+    [
+      event.recipes.create.deploying(
+        ['create:incomplete_track'],
+        ['create:incomplete_track', Ingredient.of(['#c:nuggets/iron', '#c:nuggets/zinc'])],
+      ),
+      event.recipes.create.deploying(
+        ['create:incomplete_track'],
+        ['create:incomplete_track', Ingredient.of(['#c:nuggets/iron', '#c:nuggets/zinc'])],
+      ),
+      event.recipes.create.pressing(['create:incomplete_track'], ['create:incomplete_track']),
+    ],
+    'create:incomplete_track',
+  );
+
+  event.custom({
+    type: 'createdieselgenerators:compression_molding',
+    ingredients: [
+      Ingredient.of('#c:nuggets/copper').toJson(),
+      Ingredient.of('#c:nuggets/copper').toJson(),
+      Ingredient.of('#c:nuggets/copper').toJson(),
+      Ingredient.of('#c:nuggets/copper').toJson(),
+      Ingredient.of('#c:nuggets/copper').toJson(),
+      Ingredient.of('#c:nuggets/copper').toJson(),
+    ],
+    mold: 'createdieselgenerators:chain',
+    results: [Item.of('minecraft:copper_chain').toJson()],
+  });
 });
 
 ServerEvents.generateData('after_mods', (event) => {

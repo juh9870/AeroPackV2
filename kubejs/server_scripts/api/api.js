@@ -76,6 +76,10 @@ const TAG_GROUPINGS = {};
  * @type {Record<string, RegistryTypes.Item[]>}
  */
 const ADD_TAGS = {};
+/**
+ * @type {Record<string, RegistryTypes.Block[]>}
+ */
+const ADD_BLOCK_TAGS = {};
 
 /**
  * @typedef {Object} MachineryDef
@@ -287,6 +291,31 @@ const REG = {
       } else {
         Ingredient.of(item).itemIds.forEach((id) => {
           ADD_TAGS[tag].push(/** @type {RegistryTypes.Item} */ (String(id)));
+        });
+      }
+    }
+  },
+
+  /**
+   * Adds tag to a block
+   * @param {RegistryTypes.ItemTag | string} tag
+   * @param {RegExp | RegistryTypes.Block | (RegExp | RegistryTypes.Item)[]} blocks
+   */
+  addBlockTag: (tag, blocks) => {
+    if (!ADD_BLOCK_TAGS[tag]) ADD_BLOCK_TAGS[tag] = [];
+    if (!Array.isArray(blocks)) {
+      blocks = [blocks];
+    }
+
+    for (const block of blocks) {
+      if (typeof block === 'string') {
+        ADD_BLOCK_TAGS[tag].push(block);
+      } else {
+        Ingredient.of(block).itemIds.forEach((id) => {
+          let block = Item.of(id).block;
+          if (block != null) {
+            ADD_BLOCK_TAGS[tag].push(/** @type {RegistryTypes.Block} */ (String(block.id)));
+          }
         });
       }
     }

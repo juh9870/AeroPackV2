@@ -34,6 +34,18 @@ ServerEvents.tags('item', (event) => {
     event.removeAllTagsFrom(item);
   }
 });
+ServerEvents.tags('block', (event) => {
+  for (const tag in ADD_BLOCK_TAGS) {
+    let g = ADD_BLOCK_TAGS[tag];
+    for (const item of g) {
+      event.add(/** @type {RegistryTypes.BlockTag} */ (tag), item);
+    }
+  }
+
+  for (const item of YEET_TAGS_FROM) {
+    event.removeAllTagsFrom(item);
+  }
+});
 
 ServerEvents.recipes((event) => {
   const hammer = 'createdieselgenerators:hammer';
@@ -428,6 +440,7 @@ ServerEvents.generateData('after_mods', (event) => {
   );
 
   clutterEntries['create:linear_chassis'] = ['create:secondary_linear_chassis', 'create:radial_chassis'];
+  clutterEntries['/(?<ns>[^:]+):(?<wood>.+)_fence/'] = ['${ns}:${wood}_fence_gate'];
   event.json(
     'kubejs:shape_map/modpack_cluttercompat_add',
     /** @type {any} */ ({

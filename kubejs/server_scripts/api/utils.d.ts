@@ -88,5 +88,6 @@ declare module '@special/types' {
   export namespace RegistryTypes {
     type Item = `${string}:${string}`;
     type ItemTag = `${string}:${string}`;
+    type Block = `${string}:${string}`;
   }
 }
