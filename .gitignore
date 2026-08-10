@@ -104,7 +104,7 @@ config/zfastnoise.mixin.properties
 config/asyncparticles/asyncparticles-mixin.properties
 defaultconfigs/ftbultimine/ftbultimine-*.snbt
 config/forgeendertech/cached.dat
-
+config/forgeendertech/Biomes/
 # Linux
 *~
 .fuse_hidden*
