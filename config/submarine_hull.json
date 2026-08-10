@@ -1,6 +1,22 @@
 {
   "_README": "Per-block hull strength. Edit maxWaterDepth (int) and implosionChance (0..1). Keys starting with _ are ignored.",
   "_version": 2,
+  "absolute_kinematics:ball_joint": {
+    "maxWaterDepth": 56,
+    "implosionChance": 0.6666667
+  },
+  "absolute_kinematics:ball_joint_plate": {
+    "maxWaterDepth": 56,
+    "implosionChance": 0.6666667
+  },
+  "absolute_kinematics:hinge": {
+    "maxWaterDepth": 56,
+    "implosionChance": 0.6666667
+  },
+  "absolute_kinematics:hinge_leaf": {
+    "maxWaterDepth": 56,
+    "implosionChance": 0.6666667
+  },
   "aeroclaims:claim_block": {
     "maxWaterDepth": 161,
     "implosionChance": 0.05
@@ -58688,10 +58704,6 @@
   "rubberworks:sapper": {
     "maxWaterDepth": 55,
     "implosionChance": 0.67
-  },
-  "simple_smithing_overhaul:broken_anvil": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
   },
   "simulated:altitude_sensor": {
     "maxWaterDepth": 20,

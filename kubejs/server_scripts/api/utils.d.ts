@@ -91,3 +91,16 @@ declare module '@special/types' {
     type Block = `${string}:${string}`;
   }
 }
+
+declare module '@package/com/google/gson' {
+  export type $JsonElement_ =
+    | $JsonObject
+    | $JsonArray
+    | $JsonPrimitive
+    | Record<string, $JsonElement_>
+    | $JsonElement_[]
+    | string
+    | number
+    | boolean
+    | null;
+}

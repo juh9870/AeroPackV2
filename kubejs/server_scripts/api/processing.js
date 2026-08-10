@@ -403,6 +403,8 @@ ServerEvents.generateData('after_mods', (event) => {
    */
   const clutterEntries = {};
 
+  const tagGroupTags = [];
+
   for (const tag in TAG_GROUPINGS) {
     let g = TAG_GROUPINGS[tag];
     if (!g.noMoreClutter && !g.noSelector && g.items.length > 1) {
@@ -411,7 +413,12 @@ ServerEvents.generateData('after_mods', (event) => {
     if (g.noMoreClutter) {
       clutterEntries[g.primary ?? g.items[0]] = g.items;
     }
+    if (g.noMoreClutter || !g.noSelector) {
+      tagGroupTags.push(tag);
+    }
   }
+
+  JsonIO.write('config/tag_stacker_tags.json', tagGroupTags);
 
   for (let i = 0; i < ITEM_FLIPS.length; i++) {
     let flip = ITEM_FLIPS[i];

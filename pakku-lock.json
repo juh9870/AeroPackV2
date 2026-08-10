@@ -182,6 +182,49 @@
             ]
         },
         {
+            "pakku_id": "JGK6xz2ovociol5t",
+            "pakku_links": [
+                "oZNUJM4RCXZWSU1I",
+                "P34cmWKl0PnaQN51"
+            ],
+            "type": "MOD",
+            "slug": {
+                "curseforge": "absolute-kinematics"
+            },
+            "name": {
+                "curseforge": "Absolute Kinematics | Create Aeronautics"
+            },
+            "id": {
+                "curseforge": "1619610"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "absolute_kinematics-1.0.1.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8511/680/absolute_kinematics-1.0.1.jar",
+                    "id": "8511680",
+                    "parent_id": "1619610",
+                    "hashes": {
+                        "sha1": "fc502f4edfab93626a08d33aee45947323533623",
+                        "md5": "c9b1196ce8b131fb40a4ee008f20195e"
+                    },
+                    "required_dependencies": [
+                        "328085",
+                        "676721"
+                    ],
+                    "size": 255396,
+                    "date_published": "2026-07-26T08:10:37.023Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "3B1ZOw6ylxpG88hX",
             "type": "MOD",
             "side": "SERVER",
@@ -8125,6 +8168,74 @@
             ]
         },
         {
+            "pakku_id": "oTtaXKkUTvIIDaa3",
+            "pakku_links": [
+                "JbjZ0lhMwrXNCBZ1"
+            ],
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "emi-recipe-sharing",
+                "modrinth": "emi-recipe-sharing"
+            },
+            "name": {
+                "curseforge": "EMI Recipe Sharing (EMIRS)",
+                "modrinth": "EMI Recipe Sharing (EMIRS)"
+            },
+            "id": {
+                "curseforge": "1587795",
+                "modrinth": "hAwuJJg9"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "emirecipesharing-neoforge-1.21.1-1.0.2.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8570/49/emirecipesharing-neoforge-1.21.1-1.0.2.jar",
+                    "id": "8570049",
+                    "parent_id": "1587795",
+                    "hashes": {
+                        "sha1": "6b171b5c28cc7029a0a2b936d3f429eada3094f1",
+                        "md5": "b08f7b8aa66c8246565993c0f34a176b"
+                    },
+                    "required_dependencies": [
+                        "580555"
+                    ],
+                    "size": 61821,
+                    "date_published": "2026-08-03T15:12:18.617Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "emirecipesharing-neoforge-1.21.1-1.0.2.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/hAwuJJg9/versions/6HYC0laX/emirecipesharing-neoforge-1.21.1-1.0.2.jar",
+                    "id": "6HYC0laX",
+                    "parent_id": "hAwuJJg9",
+                    "hashes": {
+                        "sha512": "87297602ea9d553d25e2dc1c44d83a02d5234b92654837d35497527cdf575df0b05cf95a2ec96034cca303bf3274efd260340f6da4f03195e7ce31d3c4e7d883",
+                        "sha1": "6b171b5c28cc7029a0a2b936d3f429eada3094f1"
+                    },
+                    "required_dependencies": [
+                        "fRiHVvU7"
+                    ],
+                    "size": 61821,
+                    "date_published": "2026-08-03T15:12:17.907699Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "xmXKN4uevplDRYYY",
             "pakku_links": [
                 "JbjZ0lhMwrXNCBZ1"
@@ -14546,6 +14657,69 @@
             ]
         },
         {
+            "pakku_id": "3sGXEM5bRH2PBIQi",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "showcase-item",
+                "modrinth": "showcase-item"
+            },
+            "name": {
+                "curseforge": "Showcase Item",
+                "modrinth": "Showcase Item"
+            },
+            "id": {
+                "curseforge": "627196",
+                "modrinth": "P5Jjjezm"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "showcaseitem-1.21.1-1.1.0.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/6426/184/showcaseitem-1.21.1-1.1.0.jar",
+                    "id": "6426184",
+                    "parent_id": "627196",
+                    "hashes": {
+                        "sha1": "3c002b0da441a752c83a2282730a1ce597a4018f",
+                        "md5": "6b184cc61df68d118a25767de5575fcc"
+                    },
+                    "required_dependencies": [],
+                    "size": 19759,
+                    "date_published": "2025-04-15T16:11:09.293Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "showcaseitem-1.21.1-1.1.0.jar",
+                    "mc_versions": [
+                        "1.21",
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/P5Jjjezm/versions/AD6eBCKn/showcaseitem-1.21.1-1.1.0.jar",
+                    "id": "AD6eBCKn",
+                    "parent_id": "P5Jjjezm",
+                    "hashes": {
+                        "sha512": "b8997536da878294201c042dd90bde2609ac315b31e0cb11267224dad24050e50b26575c6dbd8c9a941d13c5cbc14c4f417696469d2cc8fbc2b3553db44b437a",
+                        "sha1": "3c002b0da441a752c83a2282730a1ce597a4018f"
+                    },
+                    "required_dependencies": [],
+                    "size": 19759,
+                    "date_published": "2025-04-15T16:11:21.680281Z"
+                }
+            ]
+        },
+        {
             "pakku_id": "MYUkZMir8bxPwOut",
             "type": "RESOURCE_PACK",
             "side": "CLIENT",
@@ -15613,6 +15787,67 @@
                     "required_dependencies": [],
                     "size": 170539,
                     "date_published": "2026-06-22T09:10:19.437Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "ez6EhNIYzdPrnYbQ",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "tag-stacker",
+                "modrinth": "tag-stacker"
+            },
+            "name": {
+                "curseforge": "Tag Stacker",
+                "modrinth": "Tag Stacker"
+            },
+            "id": {
+                "curseforge": "1537624",
+                "modrinth": "xkJWCwI6"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "TagStacker-1.21.1-1.1.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8060/77/TagStacker-1.21.1-1.1.0.jar",
+                    "id": "8060077",
+                    "parent_id": "1537624",
+                    "hashes": {
+                        "sha1": "e21e50b4434eea7acd1350c5043cd282d70a3346",
+                        "md5": "cbe7635d97298b6c5777137ca13f7430"
+                    },
+                    "required_dependencies": [],
+                    "size": 20769,
+                    "date_published": "2026-05-08T22:04:09.287Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "TagStacker-1.21.1-1.1.0.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/xkJWCwI6/versions/OULGu1vi/TagStacker-1.21.1-1.1.0.jar",
+                    "id": "OULGu1vi",
+                    "parent_id": "xkJWCwI6",
+                    "hashes": {
+                        "sha512": "735bd39a9b45b3889496d647e6a1caeafc53be8c9ec088e53151375569a87826465c1a31fe26fd6fef3c76eec13332757d16eb400aae0a6878747b5e6277d8c3",
+                        "sha1": "e21e50b4434eea7acd1350c5043cd282d70a3346"
+                    },
+                    "required_dependencies": [],
+                    "size": 20769,
+                    "date_published": "2026-05-08T22:11:51.604120Z"
                 }
             ]
         },

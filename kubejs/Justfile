@@ -7,4 +7,5 @@ check:
     npx typescript@7 -p ./startup_scripts/jsconfig.json
 
 update-server:
-    rsync -vhP -a . /bigstore/mc_server/aero0.0.5/data/kubejs/
+    rsync -vhP -r . mc_server:/var/home/juh9870/mc_server/current/data/kubejs
+    rsync -vhP -r ../config mc_server:/var/home/juh9870/mc_server/current/data/config
