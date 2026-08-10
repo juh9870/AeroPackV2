@@ -101,7 +101,7 @@ REG.machinery({
     ['create_simulated_thrusters:blaze_thruster', 1, 'create:blaze_burner'],
     ['simulated:navigation_table', 1, 'minecraft:compass'],
     ['offroad:rockcutting_wheel', 1, 'create:crushing_wheel'],
-    ['offroad:wheel_mount', 1, 'simulated:spring'],
+    ['offroad:wheel_mount', 2, 'simulated:spring'],
     ['simulated:docking_connector', 1, 'create:brass_block'],
   ],
 });

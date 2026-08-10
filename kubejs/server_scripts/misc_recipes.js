@@ -263,6 +263,23 @@ ServerEvents.recipes((event) => {
     mold: 'createdieselgenerators:chain',
     results: [Item.of('minecraft:copper_chain').toJson()],
   });
+
+  event.shaped(
+    'minecraft:enchanted_book[stored_enchantments={levels:{"minecraft:efficiency":1}}]',
+    ['XlX', 'dbd', 'RdR'],
+    {
+      X: 'create:experience_block',
+      R: 'minecraft:redstone',
+      l: 'apotheosis:luminous_crystal_shard',
+      d: 'apotheosis:gem_dust',
+      b: 'minecraft:book',
+    },
+  );
+
+  event.recipes.create.item_application(
+    ['minecraft:enchanted_book[stored_enchantments={levels:{"createrailgrinding:railgrind_enchantment":1}}]'],
+    ['kubejs:locomotion_machine', 'minecraft:book'],
+  );
 });
 
 ServerEvents.generateData('after_mods', (event) => {
