@@ -76,11 +76,6 @@ REG.tagGroup('kubejs:redstone/circuits', [
   'simulated:redstone_accumulator',
   'simulated:redstone_inductor',
   'create_connected:sequenced_pulse_generator',
-  'redstonepen:relay',
-  'redstonepen:inverted_relay',
-  'redstonepen:pulse_relay',
-  'redstonepen:bistable_relay',
-  'redstonepen:bridge_relay',
   'morered:latch',
   'morered:pulse_gate',
   'morered:redwire_post',
@@ -105,6 +100,14 @@ REG.tagGroup('kubejs:redstone/circuits', [
   'morered:bitwise_and_gate',
   'morered:bitwise_xor_gate',
   'morered:bitwise_xnor_gate',
+  'pulsetech:pattern_detector',
+  'pulsetech:pattern_emitter',
+  'pulsetech:number_monitor',
+  'pulsetech:number_emitter',
+  'pulsetech:analog_number_emitter',
+  'pulsetech:controller',
+  'pulsetech:scope',
+  'pulsetech:program_emitter',
 ]);
 REG.tagGroup('kubejs:wires', [
   'dashpanels:cable',
@@ -126,6 +129,20 @@ REG.tagGroup('kubejs:wires', [
   'morered:red_network_cable',
   'morered:black_network_cable',
   'morered:bundled_network_cable',
+]);
+REG.tagGroup('kubejs:computers', [
+  'redstonepen:control_box',
+  'pulsetech:console',
+  'pulsetech:green_console',
+  'pulsetech:red_console',
+  'pulsetech:indigo_console',
+  'pulsetech:white_console',
+]);
+REG.tagGroup('kubejs:redstone_machinery', [
+  'minecraft:observer',
+  'pulsetech:scanner',
+  'pulsetech:screen',
+  'pulsetech:number_bulb',
 ]);
 REG.tagGroup('kubejs:mechanism/andesite', [
   'minecraft:piston',
@@ -201,7 +218,12 @@ REG.tagGroup('kubejs:gauge', [
 ]);
 REG.tagGroup('kubejs:nixie_tube', ['create:nixie_tube', 'bits_n_bobs:nixie_board', 'bits_n_bobs:large_nixie_tube']);
 REG.tagGroup('kubejs:controllers', {
-  items: ['create:linked_controller', 'redstonepen:remote', 'create_tweaked_controllers:tweaked_linked_controller'],
+  items: [
+    'create:linked_controller',
+    'redstonepen:remote',
+    'create_tweaked_controllers:tweaked_linked_controller',
+    'pulsetech:remote_console',
+  ],
   recipesWhitelist: [],
   noSelector: true,
 });
@@ -233,4 +255,11 @@ REG.itemsFlip('create:fluid_tank', 'create_connected:fluid_vessel');
 REG.itemsFlip('createvintageneoforged:centrifuge', 'create:mechanical_mixer');
 REG.itemsFlip('createvintageneoforged:curving_press', 'create:mechanical_press');
 
-REG.addBlockTag('create:wrench_pickup', [/^everycomp:fs\/.+\/.+$/, /^functionalstorage:.+$/]);
+REG.addBlockTag('create:wrench_pickup', [
+  /^everycomp:fs\/.+\/.+$/,
+  /^functionalstorage:.+$/,
+  /^morered:.+$/,
+  /^pulsetech:.+$/,
+  /^dashpanels:.+$/,
+  /^minecraft:(.+_)?copper_bulb$/,
+]);

@@ -11138,7 +11138,6 @@
             "pakku_links": [
                 "h1mpUKUaKN8PXN17",
                 "icKhPVUEszD8Qt7E",
-                "2obxCgSpgVy76igv",
                 "eZzLfWcWAK48KzUg"
             ],
             "type": "MOD",
@@ -11272,47 +11271,6 @@
                     ],
                     "size": 1640676,
                     "date_published": "2026-01-17T12:20:10.703Z"
-                }
-            ]
-        },
-        {
-            "pakku_id": "2obxCgSpgVy76igv",
-            "pakku_links": [
-                "h1mpUKUaKN8PXN17"
-            ],
-            "type": "MOD",
-            "slug": {
-                "curseforge": "l2-backpack"
-            },
-            "name": {
-                "curseforge": "L2 Backpack"
-            },
-            "id": {
-                "curseforge": "620229"
-            },
-            "files": [
-                {
-                    "type": "curseforge",
-                    "file_name": "l2backpack-3.1.4.jar",
-                    "mc_versions": [
-                        "1.21.1"
-                    ],
-                    "loaders": [
-                        "neoforge"
-                    ],
-                    "release_type": "release",
-                    "url": "https://edge.forgecdn.net/files/8137/704/l2backpack-3.1.4.jar",
-                    "id": "8137704",
-                    "parent_id": "620229",
-                    "hashes": {
-                        "sha1": "25aee11d7edb07a29f15d0bd11e584e9b98ed17f",
-                        "md5": "d4ba81cb212bb9ab3ef05016cd893d05"
-                    },
-                    "required_dependencies": [
-                        "620203"
-                    ],
-                    "size": 824645,
-                    "date_published": "2026-05-24T12:41:34.903Z"
                 }
             ]
         },
@@ -13543,6 +13501,67 @@
                     "required_dependencies": [],
                     "size": 3405057,
                     "date_published": "2026-06-23T03:39:13.240Z"
+                }
+            ]
+        },
+        {
+            "pakku_id": "Lw3eZOLTOUglMnIz",
+            "type": "MOD",
+            "side": "BOTH",
+            "slug": {
+                "curseforge": "pulsetech",
+                "modrinth": "pulsetech"
+            },
+            "name": {
+                "curseforge": "Pulsetech",
+                "modrinth": "Pulsetech"
+            },
+            "id": {
+                "curseforge": "1460255",
+                "modrinth": "1bvQYgDE"
+            },
+            "files": [
+                {
+                    "type": "curseforge",
+                    "file_name": "pulsetech-1.21.1-1.1.4.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://edge.forgecdn.net/files/8181/264/pulsetech-1.21.1-1.1.4.jar",
+                    "id": "8181264",
+                    "parent_id": "1460255",
+                    "hashes": {
+                        "sha1": "cda5c7052f6ba724ef34c4c9a90062d54cd30b18",
+                        "md5": "04183177a3e457e2a76b6fd3738fe3e7"
+                    },
+                    "required_dependencies": [],
+                    "size": 2244600,
+                    "date_published": "2026-06-01T16:49:39.310Z"
+                },
+                {
+                    "type": "modrinth",
+                    "file_name": "pulsetech-1.21.1-1.1.4.jar",
+                    "mc_versions": [
+                        "1.21.1"
+                    ],
+                    "loaders": [
+                        "neoforge"
+                    ],
+                    "release_type": "release",
+                    "url": "https://cdn.modrinth.com/data/1bvQYgDE/versions/ZI9VvtOo/pulsetech-1.21.1-1.1.4.jar",
+                    "id": "ZI9VvtOo",
+                    "parent_id": "1bvQYgDE",
+                    "hashes": {
+                        "sha512": "21207c097622951cf2e1b7499a7ccf12617e0a9f5b48199866f6802d581ae026a8682a6e73c1624b3e8af1c305d134c9a522b9aa413843bff5b95d016cf8dd1b",
+                        "sha1": "cda5c7052f6ba724ef34c4c9a90062d54cd30b18"
+                    },
+                    "required_dependencies": [],
+                    "size": 2244600,
+                    "date_published": "2026-06-01T16:50:30.763015Z"
                 }
             ]
         },

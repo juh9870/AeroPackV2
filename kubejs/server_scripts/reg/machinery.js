@@ -182,6 +182,10 @@ REG.machinery({
     ['simulated:velocity_sensor', 1, 'create:propeller'],
     ['simulated:altitude_sensor', 1, 'minecraft:paper'],
     ['create_optical:optical_sensor', 1, 'create_optical:optical_device'],
+    ['pulsetech:cannon', 1, 'minecraft:lightning_rod'],
+    ['pulsetech:orb', 1, 'minecraft:fire_charge'],
+    ['pulsetech:retriever', 1, 'create:andesite_funnel'],
+    ['pulsetech:storage_modem', 1, 'minecraft:bookshelf'],
   ],
 });
 REG.machinery({

@@ -53593,18 +53593,6 @@
     "maxWaterDepth": 50,
     "implosionChance": 0.7
   },
-  "l2backpack:dimensional_storage": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
-  "l2backpack:drawer": {
-    "maxWaterDepth": 1,
-    "implosionChance": 0.85
-  },
-  "l2backpack:ender_drawer": {
-    "maxWaterDepth": 300,
-    "implosionChance": 0.05
-  },
   "l2complements:eternal_anvil": {
     "maxWaterDepth": 300,
     "implosionChance": 0.05
@@ -58615,6 +58603,86 @@
   },
   "oilcanister:small_oil_canister": {
     "maxWaterDepth": 24,
+    "implosionChance": 0.85
+  },
+  "pulsetech:analog_number_emitter": {
+    "maxWaterDepth": 1,
+    "implosionChance": 0.85
+  },
+  "pulsetech:cannon": {
+    "maxWaterDepth": 161,
+    "implosionChance": 0.05
+  },
+  "pulsetech:console": {
+    "maxWaterDepth": 14,
+    "implosionChance": 0.85
+  },
+  "pulsetech:controller": {
+    "maxWaterDepth": 67,
+    "implosionChance": 0.6
+  },
+  "pulsetech:green_console": {
+    "maxWaterDepth": 14,
+    "implosionChance": 0.85
+  },
+  "pulsetech:indigo_console": {
+    "maxWaterDepth": 14,
+    "implosionChance": 0.85
+  },
+  "pulsetech:number_bulb": {
+    "maxWaterDepth": 67,
+    "implosionChance": 0.6
+  },
+  "pulsetech:number_emitter": {
+    "maxWaterDepth": 1,
+    "implosionChance": 0.85
+  },
+  "pulsetech:number_monitor": {
+    "maxWaterDepth": 1,
+    "implosionChance": 0.85
+  },
+  "pulsetech:orb": {
+    "maxWaterDepth": 33,
+    "implosionChance": 0.8
+  },
+  "pulsetech:pattern_detector": {
+    "maxWaterDepth": 1,
+    "implosionChance": 0.85
+  },
+  "pulsetech:pattern_emitter": {
+    "maxWaterDepth": 1,
+    "implosionChance": 0.85
+  },
+  "pulsetech:processor": {
+    "maxWaterDepth": 1,
+    "implosionChance": 0.85
+  },
+  "pulsetech:red_console": {
+    "maxWaterDepth": 14,
+    "implosionChance": 0.85
+  },
+  "pulsetech:retriever": {
+    "maxWaterDepth": 67,
+    "implosionChance": 0.6
+  },
+  "pulsetech:scanner": {
+    "maxWaterDepth": 67,
+    "implosionChance": 0.6
+  },
+  "pulsetech:scope": {
+    "maxWaterDepth": 67,
+    "implosionChance": 0.6
+  },
+  "pulsetech:screen": {
+    "maxWaterDepth": 67,
+    "implosionChance": 0.6
+  },
+  "pulsetech:storage_modem": {
+    "maxWaterDepth": 67,
+    "implosionChance": 0.6
+  },
+  "pulsetech:white_console": {
+    "maxWaterDepth": 14,
     "implosionChance": 0.85
   },
   "rainbowcompound:refined_radiance_neon": {

@@ -59,6 +59,8 @@
 	"kubejs:redstone/transmitter",
 	"kubejs:redstone/circuits",
 	"kubejs:wires",
+	"kubejs:computers",
+	"kubejs:redstone_machinery",
 	"kubejs:mechanism/andesite",
 	"kubejs:filters",
 	"kubejs:dashpanel_modules",

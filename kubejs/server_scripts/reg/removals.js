@@ -34,3 +34,11 @@ REG.yeetItem('linktablet:tablet_case');
 REG.yeetItem('linktablet:logic_board');
 REG.yeetItem('linktablet:quartz_display');
 REG.yeetItem('linktablet:clockwork_cell');
+REG.yeetItem([
+  'redstonepen:relay',
+  'redstonepen:inverted_relay',
+  'redstonepen:pulse_relay',
+  'redstonepen:bistable_relay',
+  'redstonepen:bridge_relay',
+]);
+REG.yeetItem(['pulsetech:pulse_module', 'pulsetech:protocol_module', 'pulsetech:storage_module']);
