@@ -1,0 +1,9 @@
+[
+  {
+    "action": "remove_enchantment",
+    "enchantments": [
+      "l2complements:eternal",
+      "l2complements:invincible"
+    ]
+  }
+]
