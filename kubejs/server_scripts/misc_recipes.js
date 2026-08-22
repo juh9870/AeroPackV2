@@ -280,6 +280,11 @@ ServerEvents.recipes((event) => {
     ['minecraft:enchanted_book[stored_enchantments={levels:{"createrailgrinding:railgrind_enchantment":1}}]'],
     ['kubejs:locomotion_machine', 'minecraft:book'],
   );
+
+  event.recipes.createvintageneoforged.turning(
+    [CreateItem.of('minecraft:pointed_dripstone', 0.5)],
+    ['minecraft:dripstone_block'],
+  );
 });
 
 ServerEvents.generateData('after_mods', (event) => {
